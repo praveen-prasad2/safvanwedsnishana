@@ -24,8 +24,8 @@ function VintageDivider() {
 
 export default function WeddingInvitation() {
   return (
-    <section className="h-dvh w-full overflow-hidden bg-[url('/bg-pattern.jpg')]  bg-cover bg-center flex items-center justify-center p-3 sm:p-4">
-      <article className="invitation-card group relative flex h-full max-h-full w-full max-w-[min(128mm,100%)] flex-col bg-[url('/frame.jpg')] bg-cover bg-center bg-no-repeat shadow-card transition-all duration-500 ease-out hover:shadow-card-hover">
+    <section className="h-dvh w-full overflow-hidden bg-black bg-cover bg-center flex items-center justify-center p-3 sm:p-4">
+      <article className="invitation-card group relative flex h-full max-h-full w-full max-w-[min(128mm,100%)] flex-col bg-[url('/frame.jpeg')] bg-cover bg-center bg-no-repeat shadow-card transition-all duration-500 ease-out hover:shadow-card-hover">
         <div className="relative z-10 flex h-full flex-col items-center justify-between px-6 py-7 sm:px-8 sm:py-9 mx-3 my-4 sm:mx-5 sm:my-6">
           <header className="flex shrink-0 flex-col items-center text-center">
             <Image
@@ -36,7 +36,7 @@ export default function WeddingInvitation() {
               className="opacity-85 mb-1.5 h-auto w-[7.5rem] sm:w-[8.5rem]"
               priority
             />
-            <p className="font-marcellus text-[0.45rem] sm:text-[0.5rem] tracking-[0.18em] uppercase text-charcoal/45 leading-snug max-w-[190px]">
+            <p className="font-marcellus text-[0.45rem] sm:text-[0.5rem] tracking-[0.18em] uppercase text-charcoal/45 leading-snug max-w-[300px] mb-4">
               In the Name of Allah,
               <br />
               the Most Beneficent, the Most Merciful
@@ -44,14 +44,14 @@ export default function WeddingInvitation() {
           </header>
 
           <section className="flex shrink-0 flex-col items-center text-center gap-0.5">
-            <h1 className="font-rustic text-[2.5rem] sm:text-5xl text-charcoal leading-none tracking-wide">
+            <h1 className="font-rustic text-[2.5rem] sm:text-[2.75rem] text-charcoal leading-none tracking-wide">
               Safvan
             </h1>
             <FaHeart
-              className="text-rose-300/80 text-xs my-0.5 animate-pulse"
+              className="text-rose-300/80 text-lg my-0.5 animate-pulse mt-5 -rotate-12"
               aria-hidden="true"
             />
-            <h1 className="font-rustic text-[2rem] sm:text-[2.75rem] text-charcoal leading-tight tracking-wide">
+            <h1 className="font-rustic text-[1.5rem] sm:text-[2.75rem] text-charcoal leading-tight tracking-wide">
               Nishana Sherin
             </h1>
           </section>
@@ -76,20 +76,23 @@ export default function WeddingInvitation() {
               <p className="font-marcellus text-[0.5rem] tracking-[0.2em] uppercase text-charcoal/40 mb-1">
                 Venue
               </p>
-              <a
-                href={VENUE_MAP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex flex-col items-center gap-0.5 transition-colors duration-300 hover:text-gold-dark focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gold/60 rounded-sm px-2 py-0.5"
-                aria-label="Open TKH Auditorium Venniyur location in Google Maps"
-              >
+              <div className="flex flex-col items-center gap-1.5">
                 <span className="font-marcellus text-xs sm:text-sm tracking-[0.16em] uppercase text-charcoal/75">
                   TKH Auditorium
                 </span>
-                <span className="font-marcellus text-[0.6rem] tracking-[0.22em] uppercase text-charcoal/50 border-b border-dotted border-gold/40 pb-0.5 hover:border-gold/70 hover:text-charcoal/70 transition-colors">
+                <span className="font-marcellus text-[0.6rem] tracking-[0.22em] uppercase text-charcoal/50">
                   Venniyur
                 </span>
-              </a>
+                <a
+                  href={VENUE_MAP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 font-marcellus text-[0.55rem] tracking-[0.2em] uppercase text-charcoal/70 border border-gold/50 bg-cream/60 px-3 py-1 rounded-sm transition-colors duration-300 hover:bg-gold/10 hover:border-gold/70 hover:text-charcoal focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gold/60"
+                  aria-label="Get directions to TKH Auditorium Venniyur"
+                >
+                  Get Direction
+                </a>
+              </div>
             </div>
 
             <WeddingCountdown />
