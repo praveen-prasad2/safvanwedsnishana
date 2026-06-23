@@ -29,6 +29,15 @@ const config: Config = {
         "card-hover":
           "0 35px 60px -15px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(201, 169, 98, 0.2)",
       },
+      keyframes: {
+        "loader-pulse": {
+          "0%, 100%": { opacity: "0.4" },
+          "50%": { opacity: "1" },
+        },
+      },
+      animation: {
+        "loader-pulse": "loader-pulse 2s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
