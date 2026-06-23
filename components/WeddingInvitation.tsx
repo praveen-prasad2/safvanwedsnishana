@@ -24,9 +24,9 @@ function VintageDivider() {
 
 export default function WeddingInvitation() {
   return (
-    <section className="h-dvh w-full overflow-hidden bg-black flex items-center justify-center p-2 sm:p-4">
-      <article className="invitation-card group relative w-[min(92vw,128mm,calc((100dvh-1rem)*736/1034))] aspect-[736/1034] shrink-0 bg-[url('/frame.jpeg')] bg-contain bg-center bg-no-repeat shadow-card transition-all duration-500 ease-out hover:shadow-card-hover">
-        <div className="absolute inset-[10%_12%_11%_12%] z-10 flex flex-col items-center justify-between">
+    <section className="h-dvh w-full overflow-hidden bg-black bg-cover bg-center flex items-center justify-center p-3 sm:p-4">
+      <article className="invitation-card group relative flex h-full max-h-full w-full max-w-[min(128mm,100%)] flex-col bg-[url('/frame.jpeg')] bg-cover bg-center bg-no-repeat shadow-card transition-all duration-500 ease-out hover:shadow-card-hover">
+        <div className="relative z-10 flex h-full flex-col items-center justify-between px-6 py-7 sm:px-8 sm:py-9 mx-3 my-4 sm:mx-5 sm:my-6">
           <header className="flex shrink-0 flex-col items-center text-center">
             <Image
               src="/arabic.svg"
