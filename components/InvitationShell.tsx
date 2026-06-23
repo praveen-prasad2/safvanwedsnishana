@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import FlowerLoader from "./FlowerLoader";
 import WeddingInvitation from "./WeddingInvitation";
 
-const ASSETS = ["/bg-pattern.jpg", "/frame.jpg", "/arabic.svg"];
+const ASSETS = ["/bg-pattern.jpg", "/frame.jpeg", "/arabic.svg"];
 const MAX_LOAD_MS = 5000;
 
 function preloadAssets() {
