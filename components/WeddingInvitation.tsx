@@ -51,7 +51,7 @@ export default function WeddingInvitation() {
               className="text-rose-300/80 text-lg my-0.5 animate-pulse mt-5 -rotate-12"
               aria-hidden="true"
             />
-            <h1 className="font-rustic text-[1.5rem] sm:text-[2.75rem] text-charcoal leading-tight tracking-wide">
+            <h1 className="font-rustic text-lg sm:text-[2.75rem] text-charcoal leading-tight tracking-wide">
               Nishana Sherin
             </h1>
           </section>
